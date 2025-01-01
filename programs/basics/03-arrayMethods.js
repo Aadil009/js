@@ -79,3 +79,13 @@ function sortEx(input){
     console.log("sorted:", input.sort())
 }
 sortEx([8,3,5,1])
+
+
+function problem1(input){
+    return input
+    .split(',')
+    .map((val)=>parseInt(val))
+    .filter((val)=>val%2!==0)
+    .reduce((a,b)=>a+b)
+}
+console.log(problem1('1,2,3,4,5'))
