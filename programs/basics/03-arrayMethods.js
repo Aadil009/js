@@ -44,3 +44,38 @@ const filterEx=(input)=>{
 }
 
 console.log('filter:',filterEx([1,2,3,4]))
+
+function filterEx2 (input){
+    console.log( input.filter((val) => val%2===0))
+}
+filterEx2([1,2,3,4,5,6])
+
+//reduce - reduce an array to single value
+
+function reduce (input) {
+    console.log("reduce:", input.reduce((a,b)=>a*b))
+}
+reduce([2,3,4,5])
+
+const reduceEx=(input)=>
+{
+    let res ={}
+    return input.reduce((a,b)=>{
+        console.log("==>",a,"-", b)
+        return a>b ? a : b
+    })
+}
+console.log(reduceEx([2,6,3,9,10,5]))
+
+
+//find - used to return first found element
+const findExample =(input)=>{
+    return input.find((val)=>val===4)
+}
+console.log(findExample([1,2,3,4,5,6,4]))
+
+//sort
+function sortEx(input){
+    console.log("sorted:", input.sort())
+}
+sortEx([8,3,5,1])
