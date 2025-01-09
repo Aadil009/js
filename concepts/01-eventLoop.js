@@ -69,4 +69,10 @@ KEY POINTS:
 microtask queue(eg.promises) have higher priority than callback queue(eg. setTimeout)
 event loop ensures asynchronous tasks don't block the execution of other code
 Understanding the event loop is essential for writing efficient and non-blocking JavaScript code.
+
+
+
+
+Web APIs in browsers are responsible for handling tasks like timers, DOM events, fetch requests, and worker threads, all of which can be handled asynchronously through the event loop.
+Node.js APIs handle more server-side tasks such as file system operations, HTTP requests, child processes, and events. These APIs rely on the Node.js event loop for asynchronous execution.
 */
