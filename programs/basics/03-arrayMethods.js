@@ -89,3 +89,8 @@ function problem1(input){
     .reduce((a,b)=>a+b)
 }
 console.log(problem1('1,2,3,4,5'))
+
+function problem2(arrayOfWords, n){
+    return arrayOfWords.filter(a => a.length<=n)
+}
+console.log(problem2(['aadil', 'world', 'hi'], 4))
