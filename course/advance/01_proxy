@@ -1,0 +1,9 @@
+const target = { name: 'John', age: 30 }
+const proxy = new Proxy(target, {
+  get(obj, prop) {
+    console.log(`Property '${prop}' accessed.`)
+    return obj[prop]
+  }
+})
+console.log(proxy.name)
+                        // Output: John
